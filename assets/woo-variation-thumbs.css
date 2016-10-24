@@ -1,0 +1,58 @@
+form.variations_form table.variations select {
+    display:none;
+}
+ul.woovarth-variations {
+    padding:0;
+    margin:0.3em 0 0;
+}
+ul.woovarth-variations li {
+    margin: 0 0.3em 0.3em 0;
+    border:0;
+    list-style:none;
+    float:left;
+    display:table;
+    background-color: rgba(251,252,252,0.7); /*#fbfcfc*/
+}
+ul.woovarth-variations li span {
+    width: 108px;
+    height: 30px;
+    line-height:1.2;
+    font-size:90%;
+}
+ul.woovarth-variations li img,
+ul.woovarth-variations li span {
+    vertical-align:middle;
+    text-align:center;
+    display:table-cell;
+    border: 1px solid rgba(165,170,178, 0.4);
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    -webkit-backface-visibility: hidden;
+}
+ul.woovarth-variations li img {
+    /*width: 70px;
+    height: 70px;*/
+    width:100%;
+    height:auto;
+    display:block;
+}
+ul.woovarth-variations li img:hover,
+ul.woovarth-variations li span:hover {
+    cursor:pointer;
+    border-color: #535353;
+}
+ul.woovarth-variations li.woovarth-variation-active img, 
+ul.woovarth-variations li.woovarth-variation-active span {
+    border:1px solid #535353;
+    box-shadow:0 0 0.2em rgba(0,0,0,0.4);
+}
+ul.woovarth-variations li.woovarth-variation-active span:hover, 
+ul.woovarth-variations li.woovarth-variation-active img:hover {
+        opacity:1;
+        cursor:text;
+}
+ul.woovarth-variations li.woovarth-variation-disabled {
+    display:none;
+}
